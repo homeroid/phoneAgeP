@@ -1,0 +1,32 @@
+html
+  head
+  title Agenda 
+  body
+    h3 Agenda
+    table(border= "1")
+    tr
+      th Name
+      th Lastname
+      th Email
+      th Number
+      th type
+      th options
+    each agenda in agendas
+      if  
+      tr
+        td #{agenda.name}
+        td #{agenda.lastname}
+        td #{agenda.email}
+        td #{agenda.number}
+        td #{agenda.type}
+        td 
+          a(href="") Edit
+          &nbsp; 
+          a(href="") Delete
+
+
+
+
+
+
+
